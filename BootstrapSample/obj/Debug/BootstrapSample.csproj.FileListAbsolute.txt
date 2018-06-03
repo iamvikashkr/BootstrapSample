@@ -1,0 +1,9 @@
+D:\C# Samples\BootstrapSample\BootstrapSample\bin\BootstrapSample.dll.config
+D:\C# Samples\BootstrapSample\BootstrapSample\bin\BootstrapSample.dll
+D:\C# Samples\BootstrapSample\BootstrapSample\bin\BootstrapSample.pdb
+D:\C# Samples\BootstrapSample\BootstrapSample\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\C# Samples\BootstrapSample\BootstrapSample\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\C# Samples\BootstrapSample\BootstrapSample\obj\Debug\BootstrapSample.csprojResolveAssemblyReference.cache
+D:\C# Samples\BootstrapSample\BootstrapSample\obj\Debug\BootstrapSample.csproj.CoreCompileInputs.cache
+D:\C# Samples\BootstrapSample\BootstrapSample\obj\Debug\BootstrapSample.dll
+D:\C# Samples\BootstrapSample\BootstrapSample\obj\Debug\BootstrapSample.pdb

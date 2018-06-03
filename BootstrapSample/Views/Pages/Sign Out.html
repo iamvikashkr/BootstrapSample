@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <script src="../../Scripts/jquery-3.0.0.min.js"></script>
+    <script src="../../Scripts/Script/SignUpValidation.js"></script>
+    <meta charset="utf-8" />
+    <title></title>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var pro = JSON.parse(localStorage.getItem('profile'));
+            var data = pro.key;
+            var date = new Date();
+            date.setTime(date.getTime() + (-2 * 24 * 60 * 60 * 1000));
+            var expires = "expires=" + date.toGMTString();
+
+            document.cookie = "token=" + data + ";" + expires + ";path=/";
+            window.top.location.href = "Index.html";
+
+
+        });
+    </script>
+</head>
+
+<body>
+    sfsdf
+</body>
+</html>

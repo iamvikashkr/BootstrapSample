@@ -1,0 +1,104 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <script src="../../Scripts/jquery-3.0.0.min.js"></script>
+    <script src="../../Scripts/Script/SignUpValidation.js"></script>
+    <meta charset="utf-8" />
+    <title>Home</title>
+    <style>
+        div a {
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+            padding: 15px;
+            display: inline-block;
+        }
+
+        ul {
+            display: inline;
+            margin: 0;
+            padding: 0;
+        }
+
+            ul li {
+                display: inline-block;
+            }
+
+                ul li:hover {
+                    background: #555;
+                }
+
+                    ul li:hover ul {
+                        display: block;
+                    }
+
+                ul li ul {
+                    position: absolute;
+                    width: 200px;
+                    display: none;
+                }
+
+                    ul li ul li {
+                        background: #555;
+                        display: block;
+                    }
+
+                        ul li ul li a {
+                            display: block !important;
+                        }
+
+                        ul li ul li:hover {
+                            background: #666;
+                        }
+    </style>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+          
+            var name = "token=";
+            var pro = JSON.parse(localStorage.getItem('profile'));
+            var data = pro.key;
+
+            var ca = document.cookie.split(';');
+            for (var i = 0; i < ca.length; i++) {
+                var c = ca[i];
+                while (c.charAt(0) == ' ') {
+                    c = c.substring(1);
+                }
+                if (c.indexOf(name) == 0) {
+                    var va = c.substring(name.length, c.length);
+                }
+            }
+            if (va == data) {
+                document.getElementById("log").href = "Sign Out.html";
+                document.getElementById("spSignIn").innerHTML = "SignOut";
+                document.getElementById("frame").src = "Profile.html";
+            }
+        });
+    </script>
+</head>
+<body style="background-color: ThreeDLightShadow;">
+    <div>
+        <table border="0" cellpadding="0" cellspacing="0" width="100%" class="viewtable" align="center">
+            <tr style="background-color:darkslateblue; height:50px;">
+                <td style="padding-left:5px;">
+                    ToDo App-I
+                </td>
+                <td align="right">
+                    <ul>
+                        <li><a href="Home.html" target="container">Home</a></li>
+                        <li><a href="Register.html" target="container">Register</a></li>
+                        <li><a href="Sign In.html" target="container" id="log"><span id="spSignIn">Sign In</span></a></li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td align="center">
+                    <iframe height="600px" width="800px" name="container" src="Home.html" style="margin-left:240px; " id="frame"></iframe>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>

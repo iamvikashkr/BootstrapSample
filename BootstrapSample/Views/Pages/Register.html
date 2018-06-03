@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <script src="../../Scripts/jquery-3.0.0.min.js"></script>
+    <script src="../../Scripts/Script/SignUpValidation.js"></script>
+    <link href="../../Content/bootstrap-grid.css" rel="stylesheet" />
+    <link href="../../Content/bootstrap.css" rel="stylesheet" />
+    <link href="../../Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="../Style/styles.css" rel="stylesheet" />
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body style="background-color:ThreeDLightShadow" >
+    <div class="container" >
+        <div>
+            <h1 style="margin-bottom:50px ; text-align:center">Registration Form</h1>
+        </div>
+        <div class="card">
+
+            <form>
+                <div class="row">
+                    <div class="col-sm-12 form-group ">
+                        <label style="margin-left:52px; margin-top:30px; font-weight:bold ">First Name:</label>
+                        <input type="text" name="firstName" id="firstname" placeholder="First Name" class="input " style="margin-left:25px" required />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 form-group ">
+                        <label style="margin-left:52px; font-weight:bold">Last Name:</label>
+                        <input type="text" name="lastName" id="lastname" placeholder="Last Name" class="input" style="margin-left:27px" required />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 form-group">
+                        <div>
+                            <label style="margin-left:72px; font-weight:bold">Email Id:</label>
+                            <input type="text" id="email" placeholder="Enter your Email" class="input" style="margin-left:25px" required />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+
+                    <div class="col-sm-12  form-group">
+                        <label class="align" style="font-weight:bold; margin-left:67px;">Contact :</label>
+                        <input type="text" id="phnumber" placeholder ="Enter contact number" class="input" style="margin-left:26px;" required />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12  form-group">
+                        <div>
+                            <label style="margin-left:60px; font-weight:bold">Password:</label>
+                            <input type="password" id="pwd" placeholder="Password" class="input" style="margin-left:25px" required />
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12  form-group">
+                        <label class="align" style="font-weight:bold;">Confirm Password:</label>
+                        <input type="password" placeholder="Retype your Password" class="input" style="margin-left:20px;" required />
+                    </div>
+
+                </div>
+                <div>
+                    <input type="submit" value="Register" id="submit" class="btn btn-dark" style="width:auto; margin-left:250px; margin-bottom:20px;" />
+                </div>
+
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>

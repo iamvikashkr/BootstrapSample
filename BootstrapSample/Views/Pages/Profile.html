@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <script src="../../Scripts/jquery-3.0.0.min.js"></script>
+    <script src="../../Scripts/Script/SignUpValidation.js"></script>
+    <link href="../../Content/bootstrap-grid.css" rel="stylesheet" />
+    <link href="../../Content/bootstrap.css" rel="stylesheet" />
+    <link href="../../Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="../Style/styles.css" rel="stylesheet" />
+    <meta charset="utf-8" />
+    <title></title>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            debugger;
+            var pro = JSON.parse(localStorage.getItem('profile'));
+            var fname = pro.fname;
+            var lname = pro.lname;
+            var email = pro.email;
+            var contact = pro.phonenumber;
+
+            document.getElementById("id").innerHTML = "Hello, " + fname;
+            document.getElementById("fname").innerHTML = fname;
+            document.getElementById("lname").innerHTML = lname;
+            document.getElementById("email").innerHTML = email;
+            document.getElementById("phnumber").innerHTML = contact;
+            
+        });
+    </script>
+</head>
+<body >
+   
+        <div class="container card  ">
+            <table style="margin-bottom:20px; margin-top:10px;">
+                <td id="id" style="padding-left:500px; font-weight:900; " ></td>
+            </table>
+            <table class="table table-bordered  " style=" align-self:center" >
+                <thead>
+                    <tr >
+                        <th>First name</th>
+                        <td id="fname" style="font-weight:600" ></td>
+                    </tr>
+                </thead>
+                <thead>
+                    <tr>
+                        <th>Last Name</th>
+                        <td id="lname" style="font-weight:600"></td>
+                    </tr>
+                </thead>
+                <thead>
+                    <tr>
+                        <th>Email id</th>
+                        <td id="email" style="font-weight:600"></td>
+                    </tr>
+                </thead>
+                <thead>
+                    <tr>
+                        <th>Contact No.</th>
+                        <td id="phnumber" style="font-weight:600"></td>
+                    </tr>
+                </thead>
+            </table>
+
+        </div>
+
+</body>
+</html>
